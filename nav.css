@@ -1,0 +1,158 @@
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* remove the gap so it doesn't close */
+}
+  .navbar-brand img {
+    width: 250px;
+  }
+
+  .navbar-toggler-icon {
+    background-color: #fff;
+  }
+
+  .navbar-nav {
+    margin-left: auto;
+  }
+
+
+  .nav-link{
+    padding-left: 4px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: bold;
+  }
+.trueAsian{
+    font-family: "Playfair Display";
+font-size: 40px;
+font-style: normal;
+font-variant-caps: normal;
+font-variant-east-asian: normal;
+font-variant-ligatures: normal;
+font-variant-numeric: normal;
+font-weight: 400
+}
+
+.cont1_image {
+  position: relative;
+  overflow: hidden;
+}
+
+
+.frist_image {
+  transition: transform 0.5s ease;
+  animation: scrollAnimationY 2s infinite alternate; /* Set the animation properties */
+
+}
+/*// For scroll animation we need to do some change it not working right now
+ .frist_image.animate{
+  animation: scrollAnimationY 2s ease-in-out alternate;  
+
+}
+ */
+
+
+@keyframes scrollAnimationY {
+  to {
+      transform: translateY(1rem); /* Set the desired distance for the animation */
+  }
+} 
+.second_image{
+    position: absolute;
+    bottom: 0px;
+    left: 30%;
+    width: 350px;
+    transition: transform 0.5s ease;
+  animation: scrollAnimationX 2s infinite alternate; 
+
+}
+
+
+/* // For scroll animation we need to do some change it not working right now
+ .second_image.animate{
+  animation: scrollAnimationX 2s ease-in-out alternate; 
+
+} */
+@keyframes scrollAnimationX {
+  to {
+      transform: translateX(1rem); /* Set the desired distance for the animation */
+  }
+}
+
+.cont2_image{
+  margin-left: 50px;
+ 
+}
+.cont2_image .second_image{
+  top: 25%;
+}
+
+.founder_cont{
+  margin-top: 150px;
+}
+.signature-cont{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 65%;
+}
+.content{
+  border-top: 1px solid black;
+}
+.ftr{
+  display: flex;
+  justify-content:space-evenly ;
+  /* flex-wrap: wrap; */
+  padding-top: 100px;
+}
+.follow{
+  display: flex;
+  flex-direction: column;
+
+}
+.follow a{
+  font-size: 20px;
+  color: black;
+}
+.banjra{
+  display: flex;
+  flex-direction: column;
+}
+.cont_img img{
+  width: 150px;
+  height: 200px;
+}
+@media screen and (max-width:995px) {
+ .ftr{
+  display: flex;
+  flex-direction: column;
+ }
+
+}
+  @media (min-width: 800px) {
+    .navbar {
+      padding: 10px 100px;
+      background-color: rgb(255, 127, 80);
+    }
+   
+  }
+@media screen and (max-width: 800px) {
+    .nav-list {
+        border-bottom: 1px solid black;
+      }
+    .container .cont1{
+        display: block;
+    }
+    .second_image{
+        display: none;
+    }
+    .signature-cont{
+      width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar-brand img{
+        width: 70px;
+    }
+}
